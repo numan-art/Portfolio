@@ -1,63 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Numan — Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Numan's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <main class="max-w-4xl mx-auto p-6">
-    <header class="flex justify-between items-center mb-8">
-      <div>
-        <h1 class="text-3xl font-bold">M Numan</h1>
-        <p class="text-sm text-gray-600">B.Tech CSE (AI & ML) • Aspiring Intern</p>
-      </div>
-      <div class="text-right">
-        <a href="resume.pdf" class="inline-block border px-3 py-2 rounded">Download Resume</a>
-      </div>
-    </header>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-white shadow p-6 text-center fade-in">
+    <img src="myself(1).jpeg" alt="Numan's Photo" class="mx-auto w-32 h-32 rounded-full shadow-md mb-4 hover:scale-105 transition-transform duration-300" />
+    <h1 class="text-3xl font-bold">Maraganikuntla Shaik Mohammed Numan</h1>
+    <p class="text-sm">B.Tech CSE (AI & ML) | Bangalore, India</p>
+    <div class="mt-2 space-x-4">
+      <a href="mailto:mnumanvig@gmail.com" class="text-blue-500 hover:underline">Email</a>
+      <a href="https://linkedin.com/in/maraganikuntla-numan-186aa5395" class="text-blue-500 hover:underline">LinkedIn</a>
+      <a href="https://github.com/numan-art" class="text-blue-500 hover:underline">GitHub</a>
+    </div>
+    <a href="assets/M_Numan_Resume.pdf" download class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">
+      Download My Resume (PDF)
+    </a>
+  </header>
+  <section class="p-6 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Career Objective</h2>
+    <p>
+      Motivated and detail-oriented B.Tech Computer Science and Engineering (AI & ML) student with strong fundamentals in programming, data analysis, and web technologies. Seeking an internship to gain practical experience, enhance technical skills, and contribute to innovative, real-world projects.
+    </p>
+  </section>
 
-    <section id="about" class="mb-8 bg-white p-6 rounded shadow">
-      <h2 class="text-xl font-semibold mb-2">About Me</h2>
-      <p>I’m a B.Tech (AI & ML) student at Alliance University. I build data-driven projects and front-end prototypes. Seeking internships in data analytics, ML, and web dev.</p>
-    </section>
+  <section class="p-6 bg-white shadow my-4 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Education</h2>
+    <ul class="list-disc pl-6">
+      <li><strong>Alliance University</strong> – B.Tech CSE (AI & ML), Expected 2026, GPA: 7.4/10</li>
+      <li><strong>Sri Chaitanya Junior College</strong> – Intermediate</li>
+      <li><strong>Vignan e.m School</strong> – SSC</li>
+    </ul>
+  </section>
 
-    <section id="skills" class="mb-8 bg-white p-6 rounded shadow">
-      <h2 class="text-xl font-semibold mb-3">Skills</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-700">
-        <div><strong>Languages</strong><div>Python · C++ · MATLAB</div></div>
-        <div><strong>Web</strong><div>HTML · CSS (Tailwind) · JS</div></div>
-        <div><strong>Tools</strong><div>Power BI · Excel · Unreal Engine</div></div>
-      </div>
-    </section>
+  <section class="p-6 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Technical Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div><strong>Languages:</strong> Python, C++, MATLAB</div>
+      <div><strong>Web:</strong> HTML, CSS (Tailwind)</div>
+      <div><strong>Tools:</strong> Power BI, Excel, Unreal Engine</div>
+      <div><strong>Core:</strong> Data Visualization, ML, Web Design</div>
+    </div>
+  </section>
 
-    <section id="projects" class="mb-8 bg-white p-6 rounded shadow">
-      <h2 class="text-xl font-semibold mb-3">Projects</h2>
+  <section class="p-6 bg-white shadow my-4 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Projects</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>Water Forecasting Dashboard</strong> – Python + Power BI | Smart India Hackathon</li>
+      <li><strong>AR Furniture Shopping Website</strong> – HTML, Tailwind CSS, JavaScript</li>
+      <li><strong>Portfolio Website</strong> – Responsive design showcasing skills and projects</li>
+      <li><strong>Data Visualization Dashboard</strong> – Power BI + Excel</li>
+    </ul>
+  </section>
 
-      <article class="mb-4">
-        <h3 class="font-medium">AR Furniture Shopping Website</h3>
-        <p class="text-sm text-gray-600">HTML, Tailwind, model-viewer — responsive site with AR preview. <a href="https://github.com/your-username/your-repo" class="text-blue-600">Source</a></p>
-      </article>
+  <section class="p-6 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Certifications</h2>
+    <ul class="list-disc pl-6">
+      <li>Introduction to Data Analytics – Coursera</li>
+      <li>Machine Learning – NPTEL</li>
+    </ul>
+  </section>
 
-      <article class="mb-4">
-        <h3 class="font-medium">Salary Prediction (Linear Regression)</h3>
-        <p class="text-sm text-gray-600">Python, scikit-learn, matplotlib — notebook with EDA and model. <a href="https://github.com/your-username/your-repo" class="text-blue-600">Source</a></p>
-      </article>
+  <section class="p-6 bg-white shadow my-4 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Interests</h2>
+    <p>Artificial Intelligence, Data Analytics, Web Development, Game Design, Sustainable Tech</p>
+  </section>
 
-      <article>
-        <h3 class="font-medium">Portfolio Website</h3>
-        <p class="text-sm text-gray-600">Designed a responsive portfolio showcasing skills and projects.</p>
-      </article>
-    </section>
+  <section class="p-6 fade-in">
+    <h2 class="text-xl font-semibold mb-2">Contact</h2>
+    <p>Email: <a href="mailto:mnumanvig@gmail.com" class="text-blue-500 hover:underline">mnumanvig@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/maraganikuntla-numan-186aa5395" class="text-blue-500 hover:underline">linkedin.com/in/maraganikuntla-numan</a></p>
+    <p>GitHub: <a href="https://github.com/numan-art" class="text-blue-500 hover:underline">github.com/numan-art</a></p>
+  </section>
 
-    <section id="contact" class="bg-white p-6 rounded shadow">
-      <h2 class="text-xl font-semibold mb-2">Contact</h2>
-      <p class="text-sm">Email: <a class="text-blue-600" href="mailto:numan@example.com">numan@example.com</a></p>
-      <p class="text-sm">GitHub: <a class="text-blue-600" href="https://github.com/your-username">github.com/your-username</a></p>
-    </section>
+  <footer class="bg-gray-200 text-center p-4 mt-6 fade-in">
+    <p>&copy; 2025 Numan. All rights reserved.</p>
+  </footer>
 
-    <footer class="text-center text-xs text-gray-500 mt-8">© 2025 M Numan</footer>
-  </main>
 </body>
 </html>
